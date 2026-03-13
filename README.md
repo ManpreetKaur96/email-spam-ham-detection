@@ -4,6 +4,15 @@ This project is a Machine Learning based email classifier that detects whether a
 
 The model is trained using Natural Language Processing (NLP) techniques and deployed using a Streamlit web application where users can enter an email message and instantly receive a prediction.
 
+## Project Links
+
+**GitHub Repository:**  
+https://github.com/ManpreetKaur96/email-spam-ham-detection
+
+**Live Streamlit Application:**  
+https://email-spam-ham-detection-03.streamlit.app/
+
+
 ## Features
 
 * Classifies email as Spam or Ham
@@ -43,18 +52,29 @@ These steps help the machine learning model understand the email text more effec
 ## Project Structure
 ```
 EMAIL-SPAM-HAM
-├── app.py                # Streamlit web application
-├── model.py              # Model training script
-├── research.ipynb        # Notebook used for experimentation
-├── best_model.pkl        # Saved trained model
-├── vectorizer.pkl        # TF-IDF vectorizer
-├── screenshot.png        # Application interface screenshot
-├── spam_ham_dataset.csv  # Dataset used for training
-├── requirements.txt      # Project dependencies
-├── commands.txt          # Commands to run the project
-├── examples.txt          # Example emails for testing
-└── README.md             # Project documentation
+├── app.py # Streamlit web application
+├── model.py # Model training script
+├── research.ipynb # Notebook used for experimentation
+├── best_model.pkl # Saved trained model
+├── vectorizer.pkl # TF-IDF vectorizer
+├── screenshot.png # Application interface screenshot
+├── spam_ham_dataset.csv # Dataset used for training
+├── requirements.txt # Project dependencies
+├── runtime.txt # Python version for Streamlit (python-3.11)
+├── commands.txt # Commands to run the project
+├── examples.txt # Example emails for testing
+└── README.md # Project documentation
 ```
+
+**Note:** Make sure `runtime.txt` contains:  
+`python-3.11` to ensure Streamlit Cloud runs the app correctly (avoids `imghdr` errors in Python 3.14+).
+
+## Run the Project
+
+### 1️⃣ Install Required Libraries
+
+```bash
+pip install -r requirements.txt
 
 ## Run the Project
 
