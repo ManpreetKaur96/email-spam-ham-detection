@@ -32,6 +32,7 @@ Pandas
 NLTK
 Scikit-learn
 Streamlit
+altair==4.2.2  # Required for charts and Streamlit compatibility
 
 ## Model Performance
 
